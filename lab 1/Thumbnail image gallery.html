@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery a {
+            text-decoration: none;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid black;
+            border-radius: 8px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.2);
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 20px; color: #333;">Thumbnail Image Gallery ft. Indian Cricketers</h1>
+    <div class="gallery">
+        <a href="v.jpg" target="_blank">
+            <img src="v.jpg" alt="Virat Kohli">
+        </a>
+        <a href="kl.jpg" target="_blank">
+            <img src="kl.jpg" alt="KL Rahul">
+        </a>
+        <a href="hp.jpg" target="_blank">
+            <img src="hp.jpg" alt="Hardik Pandya">
+        </a>
+        <a href="jb.jpg" target="_blank">
+            <img src="jb.jpg" alt="Jasprit Bumrah">
+        </a>
+        <a href="sg.jpg" target="_blank">
+            <img src="sg.jpg" alt="Shubman Gill">
+        </a>
+    </div>
+</body>
+</html>
